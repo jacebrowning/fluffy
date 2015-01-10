@@ -85,7 +85,7 @@ def fluff(topic):
 
 
 def quote(topic):
-    yield "According to "
+    yield "According to"
     yield random.choice((
         "Ned Flanders",
         "Lisa Simpson",
