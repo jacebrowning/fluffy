@@ -6,4 +6,4 @@ Generates random "fluff" news articles.
 
 To use:
 
-    $ python fluffy.py [topic] [company]
+    $ python3 fluffy.py [topic] [company]
