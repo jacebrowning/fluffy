@@ -40,7 +40,7 @@ def article(topic=None, company=None):
     ))
     company = company or "ACME"
 
-    yield from intoduction(topic)
+    yield from introduction(topic, company)
     yield "\n"
     for index in range(random.randint(2, 2)):
         if index % 2:
@@ -52,18 +52,26 @@ def article(topic=None, company=None):
     yield from closing(topic, company)
 
 
-def intoduction(topic):
+def introduction(topic, company):
+
     yield random.choice((
         "Despite the apparent trend,",
         "In spite of media reactions,",
+        "In this highly advanced technological age,",
+        "There will always come a time when a product becomes obsolete, but",
     ))
     yield random.choice((
-        "the medical industry",
-        "the aerospace industry",
-        "safety-critical application development",
-        "automotive infotainment",
+        "The experience carried by our high-quality workers",
+        "The range of services " + company + " can provide",
+        "The Medical industry",
+        "The Aerospace industry",
+        "Safety-Critical Application Development",
+        "Automotive Infotainment",
     ))
     yield random.choice((
+        "has shown significant improvement.",
+        "has proven to be an effective step in business inovation.",
+        "has gathered behind " + company + " to spearhead inovation.",
         "is not a dying trend.",
         "continues to demand innovation.",
     ))
@@ -75,29 +83,70 @@ def intoduction(topic):
 
 
 def fluff(topic):
-    yield "Using a " + topic + ", engineers can leverage"
+
+    yield random.choice((
+        "Using a " + topic + ",",
+
+    ))
+    yield random.choice((
+        "engineers can leverage",
+        "companies can include",
+        "businesses are able to benefit from",
+    ))
     yield random.choice((
         "the latest technology",
         "an innovative new technology",
         "a multifaceted solution",
     ))
-    yield "to meet their customer's needs."
+    yield random.choice ((
+        "to meet their customer's needs.",
+        "to solve the challenging problems they face.",
+        "to satisfy market demands.",
+    ))
 
 
 def quote(topic):
+
     yield "According to"
     yield random.choice((
-        "Ned Flanders",
-        "Lisa Simpson",
+        "Ned Flanders,",
+        "Lisa Simpson,",
+        "Mr. Bill,",
+        "Bill Nye,",
+        "Dr. Doofenshmirtz,",
+        "Columbo,",
+        "The most honorable sheriff of Nottingham,",
     ))
-    yield "at"
     yield random.choice((
-        "Competing Company,",
+        "at",
+        "a representative from",
+        "the president of",
+        "a regarded efficiency expert from",
     ))
-    yield '"A ' + topic + ' is a great way to synergize content."'
+    yield random.choice((
+        "a competing company,",
+        "a promising startup,",
+        "a respected sales firm,",
+    ))
+    yield random.choice((
+        "A " + topic + " is a great way to synergize content.",
+        "Implementing a " + topic + " can be a quite a challending task.",
+        "Companies often struggle to develop a well thought out " + topic + ".",
+    ))
+    yield random.choice((
+        "This is why collaboration is important when managing a limited resource set,",
+        "This concept is a critical challenge from a consumers' perspective,",
+        "Product lifecycles don't always match consumer expectations,",
+    ))
+    yield random.choice((
+        "as customers want their products to continue working smoothly despite any disruptions.",
+        "as engineers challenge themselves to push their product to an all new level.",
+        "as companies continue to deliver hard-hitting solutions.",
+    ))
 
 
 def closing(topic, company):
+
     yield company + " is"
     yield random.choice((
         "eager",
@@ -107,6 +156,7 @@ def closing(topic, company):
     yield random.choice((
         "exceed",
         "meet",
+        "surpass",
     ))
     yield "their goals"
     yield random.choice((
