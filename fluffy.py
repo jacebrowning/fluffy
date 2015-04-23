@@ -35,10 +35,10 @@ def main():
 def article(topic=None, company=None):
 
     topic = topic or random.choice((
-        'Hypervisor',
-        'FPGA',
-        'Embedded Systems',
-        'Continuous Integration',
+        "Hypervisor",
+        "FPGA",
+        "Embedded Systems",
+        "Continuous Integration",
     ))
     company = company or "ACME"
 
