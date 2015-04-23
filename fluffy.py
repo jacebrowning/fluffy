@@ -37,8 +37,10 @@ def article(topic=None, company=None):
     topic = topic or random.choice((
         "Hypervisor",
         "FPGA",
-        "Embedded Systems",
-        "Continuous Integration",
+        "Embedded System",
+        "Continuous Integration Server",
+        "Self-Driving Car",
+        "Flying Car",
     ))
     company = company or "ACME"
 
@@ -118,6 +120,8 @@ def quote(topic):
         "Dr. Doofenshmirtz,",
         "Columbo,",
         "the most honorable sheriff of Nottingham,",
+        "Homestar Runner,",
+        "Strongbad,",
     ))
     yield random.choice((
         "at",
