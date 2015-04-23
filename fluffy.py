@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# Note, you'll need python3.3 or greater
 
 """Generates random "fluff" news articles.
 
@@ -20,6 +21,7 @@ def main():
         company = sys.argv[-1]
     elif len(sys.argv) == 2:
         topic = sys.argv[-1]
+        company = None
     else:
         topic = None
         company = None
