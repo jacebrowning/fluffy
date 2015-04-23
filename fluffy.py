@@ -63,12 +63,12 @@ def introduction(topic, company):
         "There will always come a time when a product becomes obsolete, but",
     ))
     yield random.choice((
-        "The experience carried by our high-quality workers",
-        "The range of services " + company + " can provide",
-        "The Medical industry",
-        "The Aerospace industry",
-        "Safety-Critical Application Development",
-        "Automotive Infotainment",
+        "the experience carried by our high-quality workers",
+        "the range of services " + company + " can provide",
+        "the medical industry",
+        "the aerospace industry",
+        "safety-critical application development",
+        "automotive infotainment",
     ))
     yield random.choice((
         "has shown significant improvement.",
@@ -117,7 +117,7 @@ def quote(topic):
         "Bill Nye,",
         "Dr. Doofenshmirtz,",
         "Columbo,",
-        "The most honorable sheriff of Nottingham,",
+        "the most honorable sheriff of Nottingham,",
     ))
     yield random.choice((
         "at",
@@ -132,7 +132,7 @@ def quote(topic):
     ))
     yield random.choice((
         "A " + topic + " is a great way to synergize content.",
-        "Implementing a " + topic + " can be a quite a challending task.",
+        "Implementing a " + topic + " can be quite a challenging task.",
         "Companies often struggle to develop a well thought out " + topic + ".",
     ))
     yield random.choice((
